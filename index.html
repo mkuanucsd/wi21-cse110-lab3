@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Welcome to Marco Kuan’s Github Page | Welcome to Marco’s homepage!</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/ucsd.png">
+</head>
+
+<body>
+  <main>
+    <div style="background-color: green">
+      <h1> Welcome to Marco's homepage! </h1>
+      <br><br><br>
+
+      <!--Navigation-->
+      <nav>
+        <a href="#AboutMe">About Me</a> |
+        <a href="#CTF">Capture the Flag</a> |
+        <a href="#GameHacking">Interested in Game Hacking?</a> |
+        <a href="#Goals">Goals</a> |
+        <a href="#FunFacts">Fun Facts</a> |
+        <a href="#Contacts">Contacts</a>
+      </nav>
+    </div>
+
+    <hr>
+  </main>
+
+  <!--Top of the page-->
+  <header>
+    <h1>
+      <span style="color:green">
+        Welcome to Marco Kuan's Github Page
+      </span>
+    </h1>
+
+  </header>
+
+  <!--Quote-->
+  <p>
+    Do not fear failure but rather fear not trying - Roy T. Bennett
+  </p>
+
+  <!--SF Photo-->
+  <picture>
+    <img src="images/SF1.jpg" alt="San Francisco" style="width: 50%;">
+  </picture>
+
+  <!--About me-->
+
+  <section id="AboutMe">
+    <h2>
+      <span style="color:green">
+        About me
+      </span>
+    </h2>
+
+    <p>
+      I am a <b>Computer Science</b> major from <em>San Francisco, California</em> currently
+      attending the University of California, San Diego. I like to spend my
+      free time solving capture the flags. <strong><i>My main coding language is Java</i></strong>,
+      but I enjoy using C++ when I want to reverse engineer programs. Click
+      here to go to my Contact Information.
+
+      <br>
+      <br>
+      I would have been attending here, but COVID is cruel:
+      <br>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6845447198466!2d-117.23620218397583!3d32.88006488602927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1610499487356!5m2!1sen!2sus"
+        width="300" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+        title="UCSD Google Maps"></iframe>
+    </p>
+
+
+  </section>
+
+  <!--Capture the Flag-->
+  <section id="CTF">
+    <h2>
+      <span style="color:green">
+        Capture the Flag
+      </span>
+    </h2>
+
+    My favorite site for finding capture the flag problems is
+    <a href="https://crackmes.one/">CrackMes</a>!
+    <br>
+
+    I recommend checking out these programs if you want to get into reverse engineering:
+    <br>
+
+    <a href="https://www.hex-rays.com/">IDA</a>
+    <figure>
+      <img src="images/ida.png">
+      <figcaption>Fig. 1 - IDA</figcaption>
+    </figure>
+
+    <a href="https://ghidra-sre.org/">Ghidra</a>
+    <figure>
+      <img src="images/ghidra.png" width="100" height="100">
+      <figcaption>Fig. 2 - Ghidra</figcaption>
+    </figure>
+  </section>
+
+  <!--Game Hacking-->
+  <aside id="GameHacking">
+    <h2>
+      <span style="color:green">
+        Interested in Game Hacking?
+      </span>
+    </h2>
+
+    If you know C++, I recommend looking at:
+    <ol>
+      <li><a href="https://docs.microsoft.com/en-us/windows/win32/api/winbase/">Windows Header</a>
+        <ol>
+          <li><a
+              href="https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory">WriteProcessMemory</a>
+          </li>
+          <li><a
+              href="https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory">ReadProcessMemory</a>
+          </li>
+          <li><a
+              href="https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess">OpenProcess</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <pre>
+      <code>
+BOOL WriteProcessMemory(
+  HANDLE  hProcess,
+  LPVOID  lpBaseAddress,
+  LPCVOID lpBuffer,
+  SIZE_T  nSize,
+  SIZE_T  *lpNumberOfBytesWritten
+);
+
+BOOL ReadProcessMemory(
+  HANDLE  hProcess,
+  LPCVOID lpBaseAddress,
+  LPVOID  lpBuffer,
+  SIZE_T  nSize,
+  SIZE_T  *lpNumberOfBytesRead
+);
+
+HANDLE OpenProcess(
+  DWORD dwDesiredAccess,
+  BOOL  bInheritHandle,
+  DWORD dwProcessId
+);
+    </code>
+  </pre>
+  </aside>
+
+  <!--Goals-->
+  <section id="Goals">
+    <h3>
+      <span style="color:green">
+        Goals
+      </span>
+    </h3>
+
+    <table>
+      <caption>My Goals/Completed Goals</caption>
+      <colgroup>
+        <col span="1" style="background-color:green">
+        <col span="1" style="background-color:teal">
+      </colgroup>
+      <tr>
+        <th>Completion</th>
+        <th>Goal</th>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>Use Cheat Engine to find static offsets</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>Make a simple game hack</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>Solve simple CrackMes with IDA/Ghidra</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Solve difficult CrackMes with IDA/Ghidra</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Learn how to use IDA/Ghidra for game hacking</td>
+      </tr>
+    </table>
+  </section>
+
+  <!--Fun Facts and Miscellaneous-->
+  <aside id="FunFacts">
+    <h3>
+      <span style="color:green">
+        Fun Facts and Miscellaneous
+      </span>
+    </h3>
+
+    <details>
+      <summary>Interesting facts about me</summary>
+      <ul>
+        <li>I was interested in computer science because of game hacking
+          <ul>
+            <li>I started hacking in Combat Arms
+              <ul>
+                <li>Then, I moved on to Maplestory</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>I started out learning visual basics</li>
+        <li>I love San Francisco’s cold weather</li>
+        <li>My favorite animals are dogs</li>
+      </ul>
+    </details>
+
+    <p>
+      This is a nice credits theme from Nickelodeons that I enjoyed listening to.
+      <br>
+
+      <audio controls>
+        <source src="audio/monkey.mp3">
+      </audio>
+
+      <br>
+
+      Here is the video version!
+
+      <br>
+
+      <video controls>
+        <source src="./videos/videoplayback.mp4">
+      </video>
+    </p>
+
+    <!--Random Stuff-->
+    <h3>
+      <span style="color:green">
+        Random Stuff
+      </span>
+    </h3>
+
+    <!--Shapes-->
+    <h3>Shapes</h3>
+    Here is a random square :D
+    <br><br>
+
+    <canvas width="100" height="100" style="border:1px solid #000000"></canvas>
+
+    <br><br>
+    Here is a filled in circle with my favorite color green :D
+    <br><br>
+
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="45" stroke="black" stroke-width="4" fill="green" />
+    </svg>
+
+    <!--Forms-->
+    <form action="#">
+      <!--Ask for color-->
+      <label for="color">Choose a color:</label>
+      <select name="color" id="color">
+        <optgroup label="ROY">
+          <option value="red">Red</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+        </optgroup>
+        <optgroup label="GBV">
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="violet">Violet</option>
+        </optgroup>
+      </select>
+
+      <!--Ask for info-->
+      <fieldset>
+        <legend>Your Info</legend>
+        <!--Name-->
+        <label for="name">Last Name, First Name: </label>
+        <input type="text" id="name"><br><br>
+
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!--Telephones-->
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel"><br><br>
+
+        <!--Time-->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <!--Birthday-->
+        <label for="date">Current Day:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!--Your photo/Avatar-->
+        <label for="avatar">Avatar:</label>
+        <input type="file" id="avatar" name="avatar"><br><br>
+
+        <!--Rating-->
+        <label for="rate">Rate the Website:</label>
+        <input type="range" id="rate" name="rate"><br><br>
+
+        <!--Password-->
+        <label for="Password">Enter the password:</label>
+        <input type="password" id="Password" name="Password"><br><br>
+
+        <!--Confirmation-->
+        <label for="confirm">Click to confirm:</label>
+        <input type="radio" id="confirm" name="confirm"><br><br>
+
+        <!--Submit-->
+        <input type="submit" value="Submit">
+      </fieldset>
+
+      <!--Ask about Git-->
+      <fieldset>
+
+        <legend>Choose your favorite Git Program</legend>
+        <input type="checkbox" id="kraken">
+        <label for="kraken">Git Kraken</label><br>
+
+        <input type="checkbox" id="gui">
+        <label for="gui">Git GUI</label><br>
+
+        <input type="checkbox" id="terminal">
+        <label for="terminal">Terminal (Git commands)</label>
+      </fieldset>
+
+      <!--Ask for thoughts on the website-->
+      <fieldset>
+        <label for="thoughts">Thoughts on this website:</label>
+        <textarea id="thoughts" rows="3" cols="25">
+Provide feedback here
+        </textarea>
+      </fieldset>
+
+      <label>Choose your favorite continent</label>
+      <input list="continents">
+
+      <datalist id="continents">
+        <option value="Africa"></option>
+        <option value="Antarctica"></option>
+        <option value="Asia"></option>
+        <option value="Australia"></option>
+        <option value="Europe"></option>
+        <option value="North America"></option>
+        <option value="South America"></option>
+      </datalist>
+    </form>
+
+
+
+  </aside>
+
+  <!--Contacts-->
+  <footer id="Contacts">
+    <h3>
+      <span style="color:green">
+        Contacts
+      </span>
+    </h3>
+
+    <ul>
+      <li>School Email: mkuan@ucsd.edu</li>
+      <li>Main Email: kuan.n.marco@gmail.com</li>
+      <li>Phone: (628) 225-9166</li>
+    </ul>
+
+    <!--Button spammer-->
+    <button onclick="showContent()">Press me!</button>
+    <br>
+
+    <template>
+      <p>
+        Feel free to contact me if you have any questions
+      </p>
+    </template>
+
+    <script>
+      function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
+    </script>
+  </footer>
+</body>
+
+</html>
