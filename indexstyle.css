@@ -41,8 +41,7 @@ body {
   background-color: grey;
 
   /* Font */
-  font-family: Hack;
-  src: "path/to/hack.css";
+  font-family: 'Courier New', Courier, monospace
 }
 
 /* Header Font Color */
