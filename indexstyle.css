@@ -11,6 +11,30 @@
 
   /* Text Centered */
   text-align: center;
+  padding-top: 35px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  height: 100px;
+  width: 890px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #bd20b8;
+
+  /* Border Colors */
+  border-style:solid;
+  border-color: black;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 6px;
+
+  /* Text and Background Color Area*/
+  padding: 1cm 4cm 1cm 5cm;
+
+  height: 10px;
+  width: 550px;
 }
 
 /* Quote */
@@ -26,28 +50,21 @@
   margin-left: 2.5in;
 }
 
-/* Navigation Bar */
-.navbar {
-    /* Border Colors */
-    margin-top: 1cm;
-    margin-bottom: 1cm;
-    margin-left: 5cm;
-    margin-right: 4cm;
-}
-
 /* Body */
 body {
   /* Background */
   background-color: grey;
 
   /* Font */
-  font-family: 'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace;
+  color: palegoldenrod;
 }
 
 /* Header Font Color */
-h1, h2 {
+h1, h2, h3 {
   color: rgb(0, 255, 0, 0.8);
   text-decoration: underline;
+  text-align: center;
 }
 
 /* Links */
@@ -65,8 +82,39 @@ a:hover {
 
 /* Text colors for paragraphs*/
 p {
-  color: palegoldenrod;
-  text-align: center;
+  text-align: auto;
 }
 
 /* Image Pictures */
+.re-img {
+  margin: auto;
+}
+
+/* Rating */
+.rate {
+  display: block;
+}
+
+/* Contacts */
+.contacts-header {
+  font-size: 5em;
+  text-align: left;
+  margin: 0px 0px 0px 30px
+}
+
+.email {
+  font-size: 5ex;
+}
+
+.main-email {
+  font-size: 50%;
+}
+
+.phone {
+  font-size: 3rem;
+}
+
+.warn {
+  color: red;
+  font-size: 25px;
+}
