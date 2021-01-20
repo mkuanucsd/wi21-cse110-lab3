@@ -1,0 +1,45 @@
+/* Intro */
+.intro {
+  color: rgb(255, 255, 255);
+  background-color: #2f8e9f;
+
+  /* Border Colors */
+  border-style:solid;
+  border-color: black;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 6px
+}
+
+/* Navigation Bar */
+.navbar {
+    /* Border Colors */
+    margin-top: 1cm;
+    margin-bottom: 0.5in;
+    margin-left: 150px;
+    margin-right: 0cm;
+}
+
+/* Background Color */
+body {
+  background-color: grey;
+}
+
+/* Header Font Color */
+h1, h2 {
+  color: rgb(0, 255, 0, 0.8);
+}
+
+/* Links */
+a:visited {
+  color: hsl(139, 99%, 49%);
+}
+
+a:link {
+  color: hsla(246, 100%, 44%, 1);
+}
+
+a:hover {
+  color: rgba(255, 144, 162, 0.618);
+}
+
+/* Image Pictures */
