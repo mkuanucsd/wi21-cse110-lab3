@@ -20,9 +20,8 @@
   width: 890px;
 }
 
-/* Background Color */
+/* Universal */
 * {
-  background-color: grey;
   /* Font */
   font-family: 'Courier New', Courier, monospace;
   color: palegoldenrod;
@@ -31,6 +30,10 @@
 /* Body */
 main * {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: grey;
 }
 
 /* Navigation Bar */
@@ -67,7 +70,7 @@ main * {
   position: absolute;
   top: 500px;
   right: 300px;
-  font-size: 50px;
+  font-size: 30px;
   color:rgb(0, 255, 85)
 }
 
@@ -135,6 +138,19 @@ a[href*="https://"] {
   font-size: xx-large;
 }
 
+/* List shapes */
+li {
+  list-style-type: disc;
+}
+
+li li {
+  list-style-type: square;
+}
+
+li li li {
+  list-style-type: circle;
+}
+
 /* Text colors for paragraphs*/
 p {
   text-align: auto;
@@ -149,6 +165,10 @@ p {
   position: static;
 }
 
+a + img {
+  width: 350px
+}
+
 /* Rating */
 .rate {
   display: block;
@@ -157,6 +177,35 @@ p {
 /* Thoughts */
 .thoughts {
   display: block;
+}
+
+/* Lists */
+li > * {
+  background-color:green;
+  font-size: 10px;
+}
+
+summary ~ ul {
+  background: yellow;
+}
+
+li + li {
+  background-color: brown;
+  font-size:25px;
+}
+
+/* Table */
+table > *{
+  background-color: blue;
+}
+
+tr > td {
+  background-color: black;
+  text-align: center;
+}
+
+th + th {
+  background-color: green;
 }
 
 /* Contacts */
