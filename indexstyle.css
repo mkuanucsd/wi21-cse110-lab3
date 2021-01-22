@@ -135,6 +135,19 @@ a[href*="https://"] {
   font-size: xx-large;
 }
 
+/* List shapes */
+li {
+  list-style-type: disc;
+}
+
+li li {
+  list-style-type: square;
+}
+
+li li li {
+  list-style-type: circle;
+}
+
 /* Text colors for paragraphs*/
 p {
   text-align: auto;
@@ -149,6 +162,10 @@ p {
   position: static;
 }
 
+a + img {
+  width: 350px
+}
+
 /* Rating */
 .rate {
   display: block;
@@ -157,6 +174,35 @@ p {
 /* Thoughts */
 .thoughts {
   display: block;
+}
+
+/* Lists */
+li > * {
+  background-color:green;
+  font-size: 10px;
+}
+
+summary ~ ul {
+  background: yellow;
+}
+
+li + li {
+  background-color: brown;
+  font-size:25px;
+}
+
+/* Table */
+table > *{
+  background-color: blue;
+}
+
+tr > td {
+  background-color: black;
+  text-align: center;
+}
+
+th + th {
+  background-color: green;
 }
 
 /* Contacts */
