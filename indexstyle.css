@@ -20,9 +20,22 @@
   width: 890px;
 }
 
+/* Background Color */
+* {
+  background-color: grey;
+  /* Font */
+  font-family: 'Courier New', Courier, monospace;
+  color: palegoldenrod;
+}
+
+/* Body */
+main * {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* Navigation Bar */
 .navbar {
-  background-color: #bd20b8;
+  background-color: #f15;
 
   /* Border Colors */
   border-style:solid;
@@ -50,14 +63,48 @@
   margin-left: 2.5in;
 }
 
-/* Body */
-body {
-  /* Background */
-  background-color: grey;
+.sf-text {
+  position: absolute;
+  top: 500px;
+  right: 300px;
+  font-size: 50px;
+  color:rgb(0, 255, 85)
+}
 
-  /* Font */
-  font-family: 'Courier New', Courier, monospace;
-  color: palegoldenrod;
+/* University */
+p.uni {
+  color: red;
+  display: inline-block;
+  max-width: 50%;
+}
+
+p.code {
+  min-width: 75%;
+}
+
+/* About paragraph */
+p.about {
+  max-width: 25%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 925px) {
+  .intro {
+    background-color: yellow;
+  }
+
+  .navbar {
+    background-color: rgba(0, 8, 255, 0.33);
+  }
+}
+
+/* Return to the top */
+#goTop {
+  font-size: 13px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
 }
 
 /* Header Font Color */
@@ -80,6 +127,14 @@ a:hover {
   color: rgba(255, 144, 162, 0.618);
 }
 
+a:active {
+  color: rgba(114, 0, 130, 0.618);
+}
+
+a[href*="https://"] {
+  font-size: xx-large;
+}
+
 /* Text colors for paragraphs*/
 p {
   text-align: auto;
@@ -90,8 +145,17 @@ p {
   margin: auto;
 }
 
+.binNin {
+  position: static;
+}
+
 /* Rating */
 .rate {
+  display: block;
+}
+
+/* Thoughts */
+.thoughts {
   display: block;
 }
 
