@@ -4,12 +4,16 @@
 <head>
   <title>Welcome to Marco Kuan’s Github Page | Welcome to Marco’s homepage!</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="indexstyle.css">
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
 </head>
 
 <body>
+  <p id="goTop">
+    <a href="#top">Top ^</a>
+  </p>
+
   <main>
-    <div class="intro">
+    <div class="intro" id="#top">
       <h1> Welcome to Marco's homepage! </h1>
       <br><br><br>
     </div>
@@ -45,6 +49,8 @@
     <img src="images/SF1.jpg" alt="San Francisco" style="width: 50%;">
   </picture>
 
+  <div class="sf-text">This is San Francisco!</div>
+
   <!--About me-->
 
   <section id="AboutMe">
@@ -52,24 +58,27 @@
       About me
     </h2>
 
-    <p>
+    <p class="about">
       I am a <b>Computer Science</b> major from <em>San Francisco, California</em> currently
-      attending the University of California, San Diego. I like to spend my
-      free time solving capture the flags. <strong><i>My main coding language is Java</i></strong>,
+      attending the
+    <p class="uni">University of California, San Diego.</p>
+    I like to spend my free time solving capture the flags.
+    <p class="code"><strong><i>My main coding language is Java</i></strong>,
       but I enjoy using C++ when I want to reverse engineer programs. Click
-      here to go to my Contact Information.
-
-      <br>
-      <br>
-      I would have been attending here, but COVID is cruel:
-      <br>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6845447198466!2d-117.23620218397583!3d32.88006488602927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1610499487356!5m2!1sen!2sus"
-        width="300" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-        title="UCSD Google Maps"></iframe>
+      here to go to my Contact Information.</p>
     </p>
 
+    <br>
+    <br>
+    I would have been attending here, but COVID is cruel:
+    <br>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6845447198466!2d-117.23620218397583!3d32.88006488602927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1610499487356!5m2!1sen!2sus"
+      width="300" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      title="UCSD Google Maps">
+    </iframe>
+    </p>
 
   </section>
 
@@ -97,6 +106,9 @@
       <img src="images/ghidra.png" class="re-img">
       <figcaption>Fig. 2 - Ghidra</figcaption>
     </figure>
+
+    <a href="https://binary.ninja/">Binary Ninja</a>
+    <img src="images/binaryninja.png" class="binNin">
   </section>
 
   <!--Game Hacking-->
@@ -272,8 +284,11 @@ HANDLE OpenProcess(
       <fieldset>
         <legend>Your Info</legend>
         <!--Name-->
-        <label for="name">Last Name, First Name: </label>
-        <input type="text" id="name"><br><br>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname"><br><br>
+
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname"><br><br>
 
         <!--Email-->
         <label for="email">Email:</label>
@@ -313,7 +328,6 @@ HANDLE OpenProcess(
 
       <!--Ask about Git-->
       <fieldset>
-
         <legend>Choose your favorite Git Program</legend>
         <input type="checkbox" id="kraken">
         <label for="kraken">Git Kraken</label><br>
@@ -327,7 +341,7 @@ HANDLE OpenProcess(
 
       <!--Ask for thoughts on the website-->
       <fieldset>
-        <label for="thoughts">Thoughts on this website:</label>
+        <label for="thoughts" class="thoughts">Thoughts on this website:</label>
         <textarea id="thoughts" rows="3" cols="25">
 Provide feedback here
         </textarea>
@@ -346,8 +360,6 @@ Provide feedback here
         <option value="South America"></option>
       </datalist>
     </form>
-
-
 
   </aside>
 
