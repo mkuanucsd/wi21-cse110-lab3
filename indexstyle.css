@@ -20,9 +20,8 @@
   width: 890px;
 }
 
-/* Background Color */
+/* Universal */
 * {
-  background-color: grey;
   /* Font */
   font-family: 'Courier New', Courier, monospace;
   color: palegoldenrod;
@@ -31,6 +30,10 @@
 /* Body */
 main * {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: grey;
 }
 
 /* Navigation Bar */
@@ -67,7 +70,7 @@ main * {
   position: absolute;
   top: 500px;
   right: 300px;
-  font-size: 50px;
+  font-size: 30px;
   color:rgb(0, 255, 85)
 }
 

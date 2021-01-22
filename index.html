@@ -7,6 +7,46 @@
   <link rel="stylesheet" type="text/css" href="indexstyle.css">
 </head>
 
+<style>
+  .grid-container {
+    display: grid;
+    background-color: green;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding: 50px 50px 5px 50px;
+    text-align: center;
+  }
+
+  .grid-item {
+    background-color: rgba(0, 81, 255, 0.46);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    color: red;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(157, 211, 31);
+  }
+
+  .flex-container>div {
+    background-color: #0df776;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+    color: red
+  }
+</style>
+
 <body>
   <p id="goTop">
     <a href="#top">Top ^</a>
@@ -25,6 +65,7 @@
       <a href="#GameHacking">Interested in Game Hacking?</a> |
       <a href="#Goals">Goals</a> |
       <a href="#FunFacts">Fun Facts</a> |
+      <a href="#randLinks">randLinks</a>
       <a href="#Contacts">Contacts</a>
     </nav>
 
@@ -120,7 +161,7 @@
     If you know C++, I recommend looking at:
     <ol>
       <li><a href="https://docs.microsoft.com/en-us/windows/win32/api/winbase/">Windows Header</a>
-        <ol>
+        <ol style="max-width: 150px">
           <li><a
               href="https://docs.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory">WriteProcessMemory</a>
           </li>
@@ -362,17 +403,34 @@ Provide feedback here
 
   </aside>
 
+  <header>
+    <h2 id="randLinks">Links</h2>
+  </header>
+
+  <!--Magic Links-->
+  <div class="grid-container">
+    Check out these links! You'll be surprised ;)
+    <div class="grid-item"><a href="https://www.youtube.com/watch?v=SkgTxQm9DWM">1</a></div>
+    <div class="grid-item"><a href="https://www.youtube.com/watch?v=hGlyFc79BUE">2</a></div>
+    <div class="grid-item"><a href="https://www.youtube.com/watch?v=o1eHKf-dMwo">3</a></div>
+  </div>
+
+  <!---->
+
   <!--Contacts-->
   <footer id="Contacts">
     <h3 class="contacts-header">
       Contacts
     </h3>
 
-    <ul>
-      <li class="email">School Email: mkuan@ucsd.edu</li>
-      <li class="main-email">Main Email: kuan.n.marco@gmail.com</li>
-      <li class="phone">Phone: (628) 225-9166</li>
-    </ul>
+    <div class="flex-container">
+      <div>School Email<br>
+        mkuan@ucsd.edu</div>
+      <div>Main Email<br>
+        kuan.n.marco@gmail.com</div>
+      <div>Phone<br>
+        (628) 225-9166</div>
+    </div>
 
     <p class="warn">Avoid contacting my main email!</p>
 
